@@ -24,3 +24,8 @@ export const books = [{
     description: "This is my First Book",
 },
 ];
+
+export const fetchBookFromID = (id) => {
+    const fetchedBook = book.find((book=>book.id===id));
+    return fetchedBook;
+}
