@@ -1,8 +1,8 @@
-import { fetchBookFromID } from '../../data/utils'
-import {useRouter} from 'next/router'
+import { fetchBookFromID } from '../../data/utils';
+import { useRouter } from 'next/router';
 import React from "react";
 function BookDetails() {
-    const router = useRouter();
+    const {query} = useRouter();
     const bookId = query.id
     const book = fetchBookFromID(bookId)
     console.log(book);

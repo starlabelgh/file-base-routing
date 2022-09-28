@@ -26,6 +26,6 @@ export const books = [{
 ];
 
 export const fetchBookFromID = (id) => {
-    const fetchedBook = book.find((book=>book.id===id));
+    const fetchedBook = books.find((book)=>book.id===id);
     return fetchedBook;
 }
